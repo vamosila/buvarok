@@ -28,15 +28,16 @@
     "@angular/forms": "^20.3.0",
     "@angular/platform-browser": "^20.3.0",
     "@angular/router": "^20.3.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0",
     "baseline-browser-mapping": "2.10.8",
+    "bootstrap": "^5.3.8",
     "caniuse-lite": "1.0.30001780",
     "electron-to-chromium": "1.5.321",
     "hono": "4.12.8",
     "minipass-flush": "1.0.5",
-    "tar": "7.5.11"
+    "rxjs": "~7.8.0",
+    "tar": "7.5.11",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
     "@angular/build": "20.3.18",

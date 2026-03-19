@@ -1,0 +1,42 @@
+<!--
+* File: diver.component.html
+* Author: Vámosi László Ádám
+* Copyright: 2026, Vámosi László Ádám
+* Group: SZOFT II-N
+* Date: 2026-03-19
+* GitHub: https://github.com/vamosilaszloadam/
+* Licenc: MIT
+-->
+
+<h1>Búvárok</h1>
+
+<label for="nameFilter" class="form-label">Szűrés név alapján</label>
+<input type="text"
+    placeholder="Név"
+    [formControl]="nameFilter"
+    id="nameFilter"
+    class="form-control mb-3"
+>
+
+<table class="table table-primary table-striped table-hover table-bordered table-sm text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Név</th>
+            <th>Kor</th>
+            <th>Neme</th>
+            <th>Magasság</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(diver of diverList | diverfilter: nameFilter.value ; track diver.id) {
+            <tr>
+                <td>{{diver.id}}</td>
+                <td>{{diver.nev}}</td>
+                <td>{{diver.kor}}</td>
+                <td>{{diver.neme}}</td>
+                <td>{{diver.magassag}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
